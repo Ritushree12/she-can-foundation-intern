@@ -84,13 +84,13 @@ app.get("/user/:userId", (req, res) => {
   if (user) {
     res.json(user);
   } else {
-    res.status(404).json({ error: "User not found" });
+    res.status(404).json({ errorMessage: "User not found" });
   }
 });
 
 app.get("/leaderboard", (req, res) => {
   const sortedUsers = [...users].sort((a, b) => b.donations - a.donations);
-  const topTenUsers = sortedUsers.slice(0, 10); // Get only top 10
+  const topTenUsers = sortedUsers.slice(0, 10);
   res.json(topTenUsers);
 });
 

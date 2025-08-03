@@ -10,11 +10,12 @@
 </head>
 
 <body>
-   <!-- Login Page -->
+   
     <div id="login-page">
         <h2 id="loginHeader">Login</h2>
-        <input type="text" id="name-input" placeholder="Enter your userID" />
-        <button class="loginButton" onclick="login()">Login</button>
+        <input type="text" id="name-input" placeholder="Enter your user ID" />
+        <button class="loginButton" id="loginButton" onclick="login()">Login</button>
+        <p id="error-msg" style="display: none;"></p>
     </div>
 
     <div id="loader" style="display: none;">
@@ -25,19 +26,11 @@
         <h2>Welcome, <span id="intern-name"></span>!<span id="badge"></span></h2>
 
     </header>
-    <!-- Dashboard Page -->
 
     <div class="dashboard-body">
         <div>
             <div id="dashboard" style=" display: none;">
-                <div class="rewards">
-                    <h3>Rewards & Unlockables</h3>
-                    <ul>
-                        <li>🎁 Bronze Badge - ₹500</li>
-                        <li>🎉 Silver Badge - ₹2000</li>
-                        <li>🏆 Gold Badge - ₹5000</li>
-                    </ul>
-                </div>
+            
                 <div class="ref-don">
                     <h3 class="user-info">User Information</h3>
                     <div class="referral">
@@ -49,13 +42,24 @@
                         </p>
                     </div>
                 </div>
+                <div class="rewards">
+                    <h3>Rewards & Unlockables</h3>
+                    <ul>
+                        <li>🥉 Bronze Badge - ₹500</li>
+                        <li>🥈 Silver Badge - ₹2000</li>
+                        <li>🥇 Gold Badge - ₹5000</li>
+                
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="leaderboard" style="display: none;">
             <h3 class="leaderboard-header">Leaderboard</h3>
+            <div class="user-list-wrapper">
             <ul class="user-list">
                 <li class="list-items"></li>
             </ul>
+            </div>
         </div>
 
 

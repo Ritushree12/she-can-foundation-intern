@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   background: #ff8a8a;
@@ -9,7 +11,6 @@ body {
     rgba(253, 183, 234, 1) 35%,
     rgba(127, 85, 177, 0.39) 100%
   );
-  padding: 20px;
   text-align: center;
   min-height: 100vh;
 }
@@ -47,7 +48,7 @@ input[type="text"] {
 
 .loginButton {
   padding: 10px 20px;
-  background-color: #78c841;
+  background-color: #72d530;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgb(57, 94, 57);
 
@@ -61,6 +62,7 @@ input[type="text"] {
 ul {
   list-style: none;
   padding: 0;
+  overflow: auto;
 }
 
 #dashboard > div {
@@ -114,7 +116,6 @@ header.dashboardHeader {
 
 .dashboard-body {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   max-width: 1000px;
@@ -135,6 +136,7 @@ header.dashboardHeader {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  height: 564px;
 }
 
 .ref-don {
@@ -173,7 +175,7 @@ header.dashboardHeader {
 
 .user-list li {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr; /* Rank, Name, Donations, Badge */
+  grid-template-columns: 0.5fr 2fr 1fr 1fr;
   padding: 10px 15px;
   border-bottom: 1px solid #ccc;
   background-color: #f9f9f9;
@@ -198,10 +200,43 @@ header.dashboardHeader {
   .dashboard-body {
     flex-direction: column;
   }
+  .user-list {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+  .user-list li {
+    min-width: 600px;
+  }
 }
 
 #loader {
   margin-top: 15px;
   font-weight: bold;
   color: #b9375d;
+}
+#error-msg {
+  display: none;
+  color: #d8000c;
+  background-color: #ffdddd;
+  border: 1px solid #d8000c;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+#loginButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.user-list-wrapper {
+  max-height: 389px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
 }
