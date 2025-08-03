@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #ff8a8a;
+  background: linear-gradient(
+    331deg,
+    rgba(255, 138, 138, 1) 0%,
+    rgba(253, 183, 234, 1) 35%,
+    rgba(127, 85, 177, 0.39) 100%
+  );
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#login-page {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#dashboard {
+  background: #fff;
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(215, 177, 177, 0.1);
+  background-color: white;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginButton {
+  padding: 10px 20px;
+  background-color: #a5dd9b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgb(57, 94, 57);
+
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#dashboard > div {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%; /* fills entire #dashboard width */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* ensures padding doesn't exceed width */
+}
+
+/* Header text shadow */
+#loginHeader {
+  color: #b9375d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+header.dashboardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #799eff; /* or any other theme color */
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 0 auto; /* center align on page */
+}
+.referral {
+  background-color: #fff4a4;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.donations {
+  background-color: #a3dc9a;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.rewards {
+  background-color: #ff90bb;
+}
+
+.dashboard-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-body > * {
+  margin-bottom: 0;
+}
+
+#leaderboard {
+  background: #fff;
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.ref-don {
+  display: block;
+  background: #eddbc7;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.user-info {
+  color: #000;
+  font-size: 16px;
+}
+
+.leaderboard-header {
+  background-color: #ffe4ec; /* light pastel pink (you can change this) */
+  color: #333; /* dark text for readability */
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-list li strong,
+.user-list li span {
+  display: table-cell;
+  padding: 10px;
+  white-space: nowrap;
+  text-align: left; /* Added for left alignment */
+}
+
+.user-list li {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr; /* Rank, Name, Donations, Badge */
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.user-list li:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.user-list li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.user-list li:first-child {
+  background-color: #d6e4f0; /* pastel blue */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dashboard-body {
+    flex-direction: column;
+  }
+}
+
+#loader {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #b9375d;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intern Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+
+<body>
+   <!-- Login Page -->
+    <div id="login-page">
+        <h2 id="loginHeader">Login</h2>
+        <input type="text" id="name-input" placeholder="Enter your userID" />
+        <button class="loginButton" onclick="login()">Login</button>
+    </div>
+
+    <div id="loader" style="display: none;">
+        <img src="assets/spinner.gif" alt="Loading..." />
+    </div>
+
+    <header class="dashboardHeader" style="display: none;">
+        <h2>Welcome, <span id="intern-name"></span>!<span id="badge"></span></h2>
+
+    </header>
+    <!-- Dashboard Page -->
+
+    <div class="dashboard-body">
+        <div>
+            <div id="dashboard" style=" display: none;">
+                <div class="rewards">
+                    <h3>Rewards & Unlockables</h3>
+                    <ul>
+                        <li>🎁 Bronze Badge - ₹500</li>
+                        <li>🎉 Silver Badge - ₹2000</li>
+                        <li>🏆 Gold Badge - ₹5000</li>
+                    </ul>
+                </div>
+                <div class="ref-don">
+                    <h3 class="user-info">User Information</h3>
+                    <div class="referral">
+                        <p><strong>Referral Code:</strong> <span id="referral-code"></span></p>
+                    </div>
+                    <div class="donations">
+                        <p>
+                            <strong>Total Donations Raised:</strong> ₹<span id="donation-amount"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="leaderboard" style="display: none;">
+            <h3 class="leaderboard-header">Leaderboard</h3>
+            <ul class="user-list">
+                <li class="list-items"></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
