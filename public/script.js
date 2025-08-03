@@ -3,7 +3,7 @@ const BASE_API_URL =
 
 function login() {
   const loader = document.getElementById("loader");
-  loader.style.display = "block"; // Show loader
+  loader.style.display = "block";
 
   const userId = document.getElementById("name-input").value.trim();
 

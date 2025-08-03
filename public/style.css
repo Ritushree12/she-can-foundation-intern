@@ -47,7 +47,7 @@ input[type="text"] {
 
 .loginButton {
   padding: 10px 20px;
-  background-color: #a5dd9b;
+  background-color: #78c841;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgb(57, 94, 57);
 
@@ -67,12 +67,11 @@ ul {
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 8px;
-  width: 100%; /* fills entire #dashboard width */
+  width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* ensures padding doesn't exceed width */
+  box-sizing: border-box;
 }
 
-/* Header text shadow */
 #loginHeader {
   color: #b9375d;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -81,7 +80,7 @@ header.dashboardHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #799eff; /* or any other theme color */
+  background-color: #799eff;
   color: white;
   padding: 15px;
   font-size: 1.5rem;
@@ -91,7 +90,7 @@ header.dashboardHeader {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 600px;
-  margin: 20px auto 0 auto; /* center align on page */
+  margin: 20px auto 0 auto;
 }
 .referral {
   background-color: #fff4a4;
@@ -154,8 +153,8 @@ header.dashboardHeader {
 }
 
 .leaderboard-header {
-  background-color: #ffe4ec; /* light pastel pink (you can change this) */
-  color: #333; /* dark text for readability */
+  background-color: #ffe4ec;
+  color: #333;
   padding: 15px 20px;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -169,7 +168,7 @@ header.dashboardHeader {
   display: table-cell;
   padding: 10px;
   white-space: nowrap;
-  text-align: left; /* Added for left alignment */
+  text-align: left;
 }
 
 .user-list li {
@@ -191,7 +190,7 @@ header.dashboardHeader {
 }
 
 .user-list li:first-child {
-  background-color: #d6e4f0; /* pastel blue */
+  background-color: #d6e4f0;
   font-weight: bold;
 }
 
