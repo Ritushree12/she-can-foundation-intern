@@ -109,8 +109,6 @@ firebase deploy --only hosting
 
 ---
 
----
-
 ## 🧪 Demo Instructions
 
 To test the Intern Portal:
